@@ -1,0 +1,11 @@
+[
+    { "start" : 0, "duration" : 41.2, "character": "man", "scene": "old" },
+    { "start" : 41.2, "duration" : 56.2, "character": "lady", "scene": "eyes" },
+    { "start" : 97.4, "duration" : 23.4, "character": "girl", "scene": "scare" },
+    { "start" : 120.8, "duration" : 66.9, "character": "man", "scene": "eyes" },
+    { "start" : 187.7, "duration" : 22.2, "character": "lady", "scene": "scare" },
+    { "start" : 209.9, "duration" : 39.4, "character": "girl", "scene": "old" },
+    { "start" : 249.3, "duration" : 21.9, "character": "man", "scene": "scare" },
+    { "start" : 271.2, "duration" : 42.2, "character": "lady", "scene": "old" },
+    { "start" : 313.4, "duration" : 61.5, "character": "girl", "scene": "eyes" }
+]
