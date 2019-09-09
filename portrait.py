@@ -17,10 +17,10 @@ print("Starting up....")
 tgr = 0
 try:
     player = OMXPlayer('/home/pi/Videos/portraitsallhd.mp4',  args=['--no-osd', '--loop', '--win', '{0} {1} {2} {3}'.format(x, y, width, height)])
-    pir = MotionSensor(14)
+    pir = MotionSensor(4)
     sleep(1)
     print("Ready to trigger")
-    player.play()
+    #player.play()
     while True:
         player.pause()
         if pir.motion_detected:
@@ -30,7 +30,11 @@ try:
             sleep(obj[tgr]['duration'])
             print("Ready to trigger")
             tgr = tgr + 1
-            player.set_position(obj[tgr]['start'])
+            if tgr < len(obj) : 
+                player.set_position(obj[tgr]['start'])
+            else:
+                tgr = 0
+                player.set_position(0)
         else:
             pass
 
