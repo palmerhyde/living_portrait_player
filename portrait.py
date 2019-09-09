@@ -9,10 +9,10 @@ with open('/home/pi/Videos/markers.json') as myfile:
 
 obj = json.loads(data)
 
-x = 0
-y = 0
-width = '1440'
-height = '900'
+x = sys.argv[1]
+y = sys.argv[2]
+width = '1700'
+height = '1100'
 print("Starting up....")
 tgr = 0
 try:
@@ -20,6 +20,7 @@ try:
     pir = MotionSensor(14)
     sleep(1)
     print("Ready to trigger")
+    player.play()
     while True:
         player.pause()
         if pir.motion_detected:
